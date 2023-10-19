@@ -4,6 +4,16 @@
         <TargetFramework>net7.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+        <IsPackable>true</IsPackable>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <PackageId>IceCream-Sharp</PackageId>
+        <Title>IceCream-Sharp</Title>
+        <Authors>danielathome19</Authors>
+        <Description>🍦 Never use print() to debug in .NET again.</Description>
+        <Copyright>2023</Copyright>
+        <PackageProjectUrl>https://github.com/danielathome19/IceCream-Sharp</PackageProjectUrl>
+        <PackageLicenseUrl>https://github.com/danielathome19/IceCream-Sharp/blob/master/LICENSE.md</PackageLicenseUrl>
+        <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     </PropertyGroup>
 
     <ItemGroup>
