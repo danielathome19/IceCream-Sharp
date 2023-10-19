@@ -3,7 +3,10 @@
 IceCream# is a C# port of the [icecream](https://github.com/gruns/icecream) library for Python.
 
 ```csharp
-using IC = IceCream;
+using static IceCream.IceCream;
 
-Ic.ic();
+ic("Hello, World!");
+```
+```
+>>> ic| Program > <Main>$:3 > param_0 = Hello, World!
 ```
