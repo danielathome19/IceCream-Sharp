@@ -1,4 +1,4 @@
-name: Publish to NuGet
+name: Build and Publish NuGet
 
 on:
   push:
@@ -7,7 +7,6 @@ on:
 
 jobs:
   build:
-    name: Build and Publish to NuGet
     runs-on: ubuntu-latest
 
     steps:
@@ -19,18 +18,14 @@ jobs:
       with:
         dotnet-version: '7.0.x'
 
-    - name: Build and Test (optional)
-      run: |
-        dotnet restore
-        dotnet build --configuration Release --no-restore
-        dotnet test --no-restore --verbosity normal
+    - name: Restore dependencies
+      run: dotnet restore
+
+    - name: Build
+      run: dotnet build --configuration Release --no-restore
 
     - name: Pack
-      run: dotnet pack --configuration Release /p:Version=1.0.0 --no-build -o out
+      run: dotnet pack --configuration Release --no-build -o out
 
     - name: Push to NuGet
-      uses: rohith/publish-nuget@v2
-      with:
-        PROJECT_FILE_PATH: IceCream/IceCream.csproj
-        NUGET_KEY: ${{secrets.NUGET_API_KEY}}  
-        DOTNET_VERSION: '7.0.x'
+      run: dotnet nuget push out/*.nupkg -k ${{secrets.NUGET_API_KEY}} -s https://api.nuget.org/v3/index.json
