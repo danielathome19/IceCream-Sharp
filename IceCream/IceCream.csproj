@@ -9,7 +9,7 @@
         <PackageId>IceCream-Sharp</PackageId>
         <Title>IceCream-Sharp</Title>
         <Authors>danielathome19</Authors>
-        <Description>🍦 Never use print() to debug in .NET again.</Description>
+        <Description>🍦 Never use print() to debug in .NET again. IceCream# is a C# port of the 'icecream' library for Python.</Description>
         <Copyright>2023</Copyright>
         <PackageProjectUrl>https://github.com/danielathome19/IceCream-Sharp</PackageProjectUrl>
         <PackageLicenseUrl>https://github.com/danielathome19/IceCream-Sharp/blob/master/LICENSE.md</PackageLicenseUrl>
