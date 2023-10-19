@@ -26,7 +26,7 @@ jobs:
         dotnet test --no-restore --verbosity normal
 
     - name: Pack
-      run: dotnet pack --configuration Release --no-build -o out
+      run: dotnet pack --configuration Release /p:Version=1.0.0 --no-build -o out
 
     - name: Push to NuGet
       uses: rohith/publish-nuget@v2
