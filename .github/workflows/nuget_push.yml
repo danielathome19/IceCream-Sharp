@@ -19,7 +19,7 @@ jobs:
         dotnet-version: '7.0.x'
 
     - name: Copy README to project directory
-      run: cp README.md IceCream-Sharp/IceCream/
+      run: cp README.md IceCream/
 
     - name: Restore dependencies
       run: dotnet restore
