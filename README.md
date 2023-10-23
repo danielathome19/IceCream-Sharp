@@ -12,7 +12,6 @@ Do you ever use `Console.WriteLine()` or `Debug.WriteLine()` to debug your code?
 
  * It prints both expressions/variable names and their values.
  * It's 60% faster to type.
- * Data structures are pretty printed.
  * Output is syntax highlighted.
  * It optionally includes program context: filename, parent class, parent function, and line number.
 
