@@ -2,6 +2,7 @@ namespace IceCream;
 using System;
 using System.IO;
 using System.Text;
+using System.Text.Json;
 using System.Diagnostics;
 
 public static class IceCream {
@@ -83,10 +84,16 @@ public static class IceCream {
         }
 
         for (int i = 0; i < objects.Length; i++) {
-            builder.Append("param_").Append(i).Append(" = ").Append(objects[i]);
+            builder.Append("param_").Append(i).Append(" = ").Append(PrettyPrint(objects[i]));
             if ((i + 1) != objects.Length) builder.Append(" | ");
         }
 
         return builder.ToString();
+    }
+    
+    private static string PrettyPrint(object obj) {
+        if (obj.GetType().IsPrimitive || obj is string || obj is DateTime) return obj.ToString();
+        try { return JsonSerializer.Serialize(obj, new JsonSerializerOptions { WriteIndented = true });
+        } catch { return obj.ToString(); }
     }
 }
