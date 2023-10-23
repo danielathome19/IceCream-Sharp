@@ -6,7 +6,7 @@
 
 IceCream# is a C# port of the [icecream](https://github.com/gruns/icecream) library for Python.
 
-Do you ever use `Console.WriteLine()` or `Debug.WriteLine()` to debug your code? Of course you do. IceCream, or ic for short, makes print debugging a little sweeter.
+Do you ever use `Console.WriteLine()` or `Debug.WriteLine()` to debug your code? Of course you do. IceCream, or `ic` for short, makes print debugging a little sweeter.
 
 `ic()` is like `Console.WriteLine()`, but better:
 
