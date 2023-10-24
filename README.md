@@ -1,7 +1,7 @@
 # IceCream\# — Never use Console.WriteLine() to debug in .NET again.
 
 [![NuGet](https://img.shields.io/nuget/v/IceCream-Sharp.svg)](https://www.nuget.org/packages/IceCream-Sharp/)
-[![CI](https://github.com/danielathome19/IceCream-Sharp/actions/workflows/nuget_push.yml/badge.svg)](https://github.com/danielathome19/IceCream-Sharp/actions/workflows/nuget_push.yml)
+[![CI/CT/CD](https://github.com/danielathome19/IceCream-Sharp/actions/workflows/nuget_push.yml/badge.svg)](https://github.com/danielathome19/IceCream-Sharp/actions/workflows/nuget_push.yml)
 [![License](https://img.shields.io/github/license/danielathome19/IceCream-Sharp.svg)](https://github.com/danielathome19/IceCream-Sharp/blob/master/LICENSE.md)
 
 IceCream# is a C# port of the [icecream](https://github.com/gruns/icecream) library for Python.
