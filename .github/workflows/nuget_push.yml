@@ -1,4 +1,4 @@
-name: CI
+name: CI/CT/CD
 
 on:
   push:
@@ -26,6 +26,9 @@ jobs:
 
     - name: Build
       run: dotnet build --configuration Release --no-restore
+
+    - name: Run Unit Tests
+      run: dotnet test --no-restore --verbosity normal
 
     - name: Pack
       run: dotnet pack --configuration Release --no-build -o out
